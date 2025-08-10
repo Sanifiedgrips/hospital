@@ -68,7 +68,7 @@ $result = mysqli_query($conn,$sql);
               <td><img src="./image/<?= htmlspecialchars($rows['himage']) ?>" alt="hospital"   style="width: 70px; height: 70px; object-fit: cover; border-radius: 60%;"></td>
               <td><?= htmlspecialchars($rows['location']) ?></td>
               <td><?= htmlspecialchars($rows['Disease']) ?></td>
-              <td><a class="btn btn-primary btn-md " href="">Edit</a><a class="btn btn-danger btn-md" href="">DELETE</a></td>
+              <td><a class="btn btn-primary btn-md " href="hedit.php?hos_id=<?php echo $rows["hos_id"] ?>">Edit</a><a class="btn btn-danger btn-md" href="">DELETE</a></td>
 
             </tr>
             <?php
@@ -84,3 +84,4 @@ $result = mysqli_query($conn,$sql);
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+            
