@@ -23,6 +23,8 @@
   <a href="DOCTOR.php" class="sidebar-link d-block text-white mb-2"><i class="bi bi-person-badge me-2"></i>DOCTOR</a>
   <a href="VACCINATION.php" class="sidebar-link d-block text-white mb-2"><i class="bi bi-shield-fill-plus"></i></i> VACCINATION</a>
   <a href="TREATMENT.php" class="sidebar-link d-block text-white mb-2"><i class="bi bi-clipboard2-pulse me-2"></i>TREATMENT</a>
+  <a href="#" class="sidebar-link d-block text-white mb-2"><i class="bi bi-calendar-check-fill me-2"></i>Appointment</a>
+
   <a href="PATIENT.php" class="sidebar-link d-block text-white mb-2"><i class="bi bi-people me-2"></i>PATIENT</a>
   <a href="Profile.php" class="sidebar-link d-block text-white mb-2"><i class="bi bi-person me-2"></i>Profile</a>
   <a href="Settings.php" class="sidebar-link d-block text-white mb-2"><i class="bi bi-gear me-2"></i>Settings</a>
