@@ -31,46 +31,46 @@ $rows = mysqli_fetch_assoc($result);
 <div class="container">
   
    <h2 class="text-center mb-4">REGISTER OF HOSPITAL</h2>
-  <form class="needs-validation" method="post" action="" enctype="multipart/form-data" novalidate>
+  <form class="needs-validation" method="post" action="hupdate.php" enctype="multipart/form-data" novalidate>
     <div class="row mb-3">
-        <input type="hidden"  value="<?php echo $rows['hos_id'] ?>" name="hos_id" class="form-control"    id="hospitalname" required>
+        <input type="hidden"  value="<?php echo $rows['hos_id'] ?>" name="hos_id" class="form-control"    id="hospitalname" >
         
       <div class="col-md-6">
         <label for="hospitalname" class="form-label">HOSPITAL NAME</label>
-        <input type="text"  value="<?php echo $rows['hospitalname'] ?>" name="hname" class="form-control" id="hospitalname" required>
-        <div class="invalid-feedback">hospital name is required.</div>
+        <input type="text"  value="<?php echo $rows['hospitalname'] ?>" name="hname" class="form-control" id="hospitalname" >
+
       </div>
       <div class="col-md-6">
         <label for="email" class="form-label">Email address</label>
-        <input type="email" value="<?php echo $rows['email'] ?>" name="email" class="form-control" id="email" required>
+        <input type="email" value="<?php echo $rows['email'] ?>" name="email" class="form-control" id="email" >
         <div class="invalid-feedback">Please enter a valid email address.</div>
       </div>
     </div>
 
     <div class="mb-3">
       <label for="phonenumber" class="form-label">PHONENUMBER</label>
-      <input type="text" value="<?php echo $rows['Phonenumber'] ?>" name="pnum" class="form-control" id="phonenumber" required>
+      <input type="text" value="<?php echo $rows['Phonenumber'] ?>" name="pnum" class="form-control" id="phonenumber" >
       <div class="invalid-feedback"> PHONENUMBER is required.</div>
     </div>
 
     <div class="mb-3">
       <label for="image" class="form-label">ADD HOSIPITAL LOGO</label>
       <!-- <textarea class="form-control" id="message" rows="4" required></textarea> -->
-      <input type="file" value="<?php echo $rows['himage'] ?>" name="img" class="form-control" id="image" required>
+      <input type="file" value="<?php echo $rows['himage'] ?>" name="img" class="form-control" id="image" >
 
       <div class="invalid-feedback">please add hospital logo required</div>
     </div>
  <div class="mb-3">
       <label for="address" class="form-label">LOCATION</label>
       <!-- <textarea class="form-control" id="message" rows="4" required></textarea> -->
-      <input type="address" value="<?php echo $rows['location'] ?>" name="loc" class="form-control" id="address" required>
+      <input type="address" value="<?php echo $rows['location'] ?>" name="loc" class="form-control" id="address" >
 
       <div class="invalid-feedback">location is required.</div>
     </div>
 <div class="mb-3">
       <label for="message" class="form-label">Disease</label>
       <!-- <textarea class="form-control" id="message" rows="4" required></textarea> -->
-      <input type="text" value="<?php echo $rows['Disease'] ?>" name="dise" class="form-control" id="email" required>
+      <input type="text" value="<?php echo $rows['Disease'] ?>" name="dise" class="form-control" id="email">
 
       <div class="invalid-feedback">Disease is required</div>
     </div>
